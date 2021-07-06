@@ -37,6 +37,7 @@
         padding: 14px;
         margin: 2px 0px;
         margin-bottom: 20px;
+        width: auto;
     }
     
     #services .box img {
@@ -66,7 +67,7 @@
     p {
         font-size: 12px;
     }
-    .btn {
+    .btn1 {
         font-size: 13px;
         padding: 4px 8px;
     }
