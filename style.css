@@ -1,0 +1,305 @@
+/* CSS Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#logo {
+    margin: 7px 0px;
+}
+
+#logo img {
+    border-radius: 5px;
+    height: 60px;
+    margin: 3px 6px;
+}
+
+
+/* Navbar */
+
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar ul {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+}
+
+#navbar ul li {
+    padding: 0px 10px;
+    list-style: none;
+    font-size: 1.3rem;
+    border-radius: 20px;
+}
+
+
+/* #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+} */
+
+#navbar ul li:hover {
+    color: black;
+    background-color: white;
+}
+
+.search input {
+    padding: 0px 25px 2px 5px;
+}
+
+#search {
+    width: 400px;
+    height: 23px;
+    margin: 5px;
+}
+
+
+/* home section */
+
+#home {
+    display: flex;
+    justify-content: center;
+    padding: 30px 200px;
+    background: url(../img/bg.webp) no-repeat center center/cover;
+    height: 265px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 410px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home p {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+}
+
+#home h1 {
+    color: rgb(3, 2, 2);
+    text-align: center;
+    font-size: 3.0rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* service section */
+
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid black;
+    margin: 8px;
+    padding: 12px;
+    width: 33%;
+    border-radius: 32px;
+    background-color: rgb(250, 245, 245);
+}
+
+#services .box img {
+    height: 65px;
+    display: block;
+    margin: auto;
+    border-radius: 13px;
+    transition: .5s;
+}
+
+#services .box p {
+    text-align: center;
+    font-size: 1.0rem;
+    font-family: 'Bree Serif', serif;
+}
+
+
+/* brands */
+
+#brands-section {
+    position: relative;
+    height: 250px;
+}
+
+#brands-section::before {
+    content: "";
+    position: absolute;
+    height: 65%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands img {
+    position: relative;
+    z-index: -2;
+    height: 100px;
+    border-radius: 10px;
+    padding: 0px 15px 18px 0px;
+    margin: 10px;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+
+/* contact */
+
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    background: url(../img/contactLogo.webp)no-repeat center center/cover;
+}
+
+#contact-box {
+    padding: 0px 0px 15px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-box input,
+textarea {
+    border-radius: 9px;
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+#contact-box form {
+    width: 30%;
+}
+
+#contact-box label {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.2rem;
+}
+
+
+/* footer */
+
+footer {
+    background-color: rgba(0, 0, 0, 0.705);
+    color: white;
+    padding: 12px;
+}
+
+
+/* utility class */
+
+.h-primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+
+.btn {
+    padding: 5px 20px;
+    background-color: rgb(247, 240, 231);
+    border: 2px solid rgba(0, 0, 0, 0.705);
+    color: black;
+    margin: 10px;
+    font-size: 1.0rem;
+    border-radius: 7px;
+    cursor: url(../img/contactLogo.webp);
+}
+
+.btn:hover {
+    background-color: rgb(238, 215, 186);
+}
+
+.btn1,
+.btn2 {
+    padding: 2px 5px 5px 5px;
+    background-color: rgb(247, 240, 231);
+    border: 2px solid black;
+    color: black;
+    margin: 5px;
+    font-size: 1.0rem;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.btn1:hover,
+.btn2:hover {
+    background-color: rgb(238, 215, 186);
+}
+
+.center {
+    text-align: center;
+}
+
+.btn2 {
+    margin: 7px 200px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(95, 95, 131);
+}
