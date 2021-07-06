@@ -1,6 +1,8 @@
     /* CSS Reset */
     /* Navbar */
-    
+    #logo img {
+    margin: 3px 140px;
+}
     #navbar {
         flex-direction: column;
        align-items: baseline;
