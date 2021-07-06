@@ -3,6 +3,7 @@
     
     #navbar {
         flex-direction: column;
+       align-items: baseline;
     }
     
     #navbar ul li a {
@@ -37,7 +38,7 @@
     }
     
     #services .box img {
-        height: 100px;
+        height: 50px;
     }
     /* brands */
     
