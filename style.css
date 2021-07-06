@@ -92,7 +92,7 @@ html {
     display: flex;
     justify-content: center;
     padding: 30px 200px;
-    background: url(../img/bg.webp) no-repeat center center/cover;
+    background: url(bg.webp) no-repeat center center/cover;
     height: 265px;
     align-items: center;
     flex-direction: column;
@@ -204,7 +204,7 @@ img:hover {
     width: 100%;
     z-index: -1;
     opacity: 0.4;
-    background: url(../img/contactLogo.webp)no-repeat center center/cover;
+    background: url(contactLogo.webp)no-repeat center center/cover;
 }
 
 #contact-box {
@@ -263,7 +263,7 @@ footer {
     margin: 10px;
     font-size: 1.0rem;
     border-radius: 7px;
-    cursor: url(../img/contactLogo.webp);
+    cursor: url(contactLogo.webp);
 }
 
 .btn:hover {
